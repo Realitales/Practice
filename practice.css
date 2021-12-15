@@ -7,13 +7,20 @@
 body {
   background-color: gray;
 }
-.navbar {
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+#navbarhamburger {
+  position: fixed;
+  right: 0px;
 }
 .navbar {
   position: absolute;
   right: 0px;
   bottom: 40vh;
-  visibility: hidden;
 }
 .navbar ul {
   display: flex;
@@ -27,4 +34,9 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 50px;
+}
+#navbarhamburger {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
