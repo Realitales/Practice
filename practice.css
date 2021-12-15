@@ -11,10 +11,19 @@ body {
 .navbar {
   position: absolute;
   right: 0px;
-  margin: 20px;
+  bottom: 40vh;
+  visibility: hidden;
 }
 .navbar ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  background-color: green;
+  padding-right: 20px;
+}
+.navbar ul li {
+  font-family: Tw Cen MT;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 50px;
 }
