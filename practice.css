@@ -1,4 +1,3 @@
-/*Practice*/
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +5,43 @@
 }
 body {
   background-color: black;
+  overflow: hidden;
+}
+@keyframes slidein {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes slideout {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -300px;
+  }
 }
 /*Animation for show and hide*/
 .show {
-  visibility: visible;
+  right: 0px;
+  animation: slidein ease-in-out 0.1s;
 }
 .hide {
-  visibility: hidden;
+  right: -300px;
+  animation: slideout ease-in-out 0.1s;
+}
+
+.headercontainer {
+  position: fixed;
+  right: 0px;
 }
 .header {
   width: 80px;
   height: 100vh;
   background-color: #0b0c10;
   position: fixed;
-  right: 0px;
   display: flex;
   align-items: flex-end;
 }
@@ -57,4 +79,11 @@ body {
   height: 1vh;
   background-color: white;
   border-radius: 100px;
+}
+
+.landingpage {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  visibility: hidden;
 }

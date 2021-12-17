@@ -1,7 +1,7 @@
 const redbutton = document.getElementById("navbarhamburger");
 const navbarheader= document.querySelector(".header");
 
-navbarheader.classList.add("hide");
+//navbarheader.classList.add("hide");
 redbutton.addEventListener ("click", () => {
  
   
