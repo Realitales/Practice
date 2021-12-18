@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url(//db.onlinewebfonts.com/c/81782c93d67441abaf973d576bb81514?family=Museo+Sans+Rounded+500);
+:root {
+  --cyanp: #03dac6;
+  --greenp: #34ff1d;
+  --cyanpdark: #45a29e;
+  --Tlium: "Titillium Web";
+  --Museo: "Museo Sans Rounded 500";
+}
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +107,7 @@ body {
 /*navbar layout*/
 .navbar {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .navbar ul {
   display: flex;
@@ -107,7 +116,7 @@ body {
 }
 
 .navbar ul li {
-  font-family: Titillium;
+  font-family: "Museo Sans rounded 500";
   font-weight: normal;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -115,10 +124,39 @@ body {
   text-align: center;
   color: #c5c6c7;
 }
-
+/*landing page content*/
 .landingpage {
   display: flex;
   flex-direction: column;
-  color: white;
-  visibility: hidden;
+  padding-left: 20px;
+  padding-top: 150px;
+  width: 20.9em;
+}
+.author {
+  line-height: 1em;
+}
+.author h2 {
+  color: var(--greenp);
+  font-family: var(--Tlium);
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.headtitle {
+  height: 6.5em;
+}
+.headtitle h1 {
+  color: var(--cyanp);
+  font-family: var(--Museo);
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+.headtitle span {
+  font-size: 3.5rem;
+  position: relative;
+  bottom: 40px;
+}
+.tagline p {
+  color: var(--cyanpdark);
+  font-family: var(--Tlium);
+  font-size: 1.2rem;
 }
