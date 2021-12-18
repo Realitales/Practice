@@ -35,11 +35,11 @@ body {
 /*Animation for show and hide of the side navbar*/
 .showsidenavbar {
   right: 0px;
-  animation: slidein ease-in-out 0.1s;
+  animation: slidein ease-in-out 0.4s;
 }
 .hidesidenavbar {
   right: -300px;
-  animation: slideout ease-in-out 0.1s;
+  animation: slideout ease-in-out 0.4s;
 }
 
 .headercontainer {
