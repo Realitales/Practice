@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-@import url(//db.onlinewebfonts.com/c/81782c93d67441abaf973d576bb81514?family=Museo+Sans+Rounded+500);
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 :root {
   --cyanp: #03dac6;
   --greenp: #34ff1d;
   --cyanpdark: #45a29e;
   --Tlium: "Titillium Web";
-  --Museo: "Museo Sans Rounded 500";
+  --varela: "Varela Round";
 }
 * {
   margin: 0;
@@ -116,9 +116,9 @@ body {
 }
 
 .navbar ul li {
-  font-family: "Museo Sans rounded 500";
+  font-family: var(--varela);
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   line-height: 3em;
   text-align: center;
@@ -142,21 +142,21 @@ body {
   font-weight: normal;
 }
 .headtitle {
-  height: 6.5em;
+  height: 6em;
 }
 .headtitle h1 {
   color: var(--cyanp);
-  font-family: var(--Museo);
-  font-size: 4rem;
+  font-family: var(--varela);
+  font-size: 3.6rem;
   font-weight: normal;
 }
 .headtitle span {
-  font-size: 3.5rem;
+  font-size: 3rem;
   position: relative;
-  bottom: 0.5em;
+  bottom: 0.6em;
 }
 .tagline p {
   color: var(--cyanpdark);
-  font-family: var(--Tlium);
-  font-size: 1.2rem;
+  font-family: var(--varela);
+  font-size: 4vmin;
 }
