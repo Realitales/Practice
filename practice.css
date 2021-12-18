@@ -130,7 +130,7 @@ body {
   flex-direction: column;
   padding-left: 20px;
   padding-top: 150px;
-  width: 20.9em;
+  width: 100vw;
 }
 .author {
   line-height: 1em;
@@ -138,7 +138,7 @@ body {
 .author h2 {
   color: var(--greenp);
   font-family: var(--Tlium);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 .headtitle {
@@ -147,13 +147,13 @@ body {
 .headtitle h1 {
   color: var(--cyanp);
   font-family: var(--Museo);
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: normal;
 }
 .headtitle span {
   font-size: 3.5rem;
   position: relative;
-  bottom: 40px;
+  bottom: 0.5em;
 }
 .tagline p {
   color: var(--cyanpdark);
