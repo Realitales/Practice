@@ -1,20 +1,21 @@
-const redbutton = document.getElementById("navbarhamburger");
+const navbarbutton = document.querySelector(".navbarhamburger");
 const navbarheader= document.querySelector(".header");
 
+
 //navbarheader.classList.add("hide");
-redbutton.addEventListener ("click", () => {
+navbarbutton.addEventListener ("click", () => {
  
   
-  
-  if(navbarheader.classList.contains("show")==true){
+  navbarbutton.classList.toggle("show");
+  if(navbarheader.classList.contains("showsidenavbar")==true){
 
-    navbarheader.classList.remove("show");
-    navbarheader.classList.add("hide");
+    navbarheader.classList.remove("showsidenavbar");
+    navbarheader.classList.add("hidesidenavbar");
   }
   else{
       
-    navbarheader.classList.remove("hide");
-    navbarheader.classList.add("show");
+    navbarheader.classList.remove("hidesidenavbar");
+    navbarheader.classList.add("showsidenavbar");
 
   }
 })  
