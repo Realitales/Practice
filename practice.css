@@ -271,3 +271,90 @@ body {
   font-size: 0.8rem;
   font-family: var(--Tlium);
 }
+
+@media (min-width: 600px) {
+  .navbarhamburger {
+    visibility: hidden;
+  }
+
+  .landingpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .landingpagecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .headtitle span {
+    font-size: 10rem;
+    position: relative;
+    bottom: 0em;
+  }
+  .headtitle h1 {
+    color: var(--cyanp);
+    font-family: var(--varela);
+    font-size: 10rem;
+    font-weight: normal;
+    width: 100%;
+  }
+  .tagline {
+    line-height: 19em;
+  }
+  .tagline p {
+    color: var(--cyanpdark);
+    font-family: var(--varela);
+    font-size: 4vmin;
+  }
+  .author {
+    line-height: 5em;
+  }
+  .author h2 {
+    color: var(--greenp);
+    font-family: var(--Tlium);
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .headercontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  }
+  .header {
+    width: 100%;
+    height: 10vh;
+    background: none;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    margin-bottom: 100px;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navbar ul li {
+    font-family: var(--varela);
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 3em;
+    text-align: center;
+    color: #c5c6c7;
+    margin: 1em 3em;
+  }
+}
