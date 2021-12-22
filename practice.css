@@ -274,6 +274,12 @@ body {
 }
 
 @media (min-width: 600px) {
+  @keyframes fadein {
+    to {
+      opacity: 100%;
+      top: 15em;
+    }
+  }
   /*makes the phone hamburger button disappear*/
   .navbarhamburger {
     visibility: hidden;
@@ -293,6 +299,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    opacity: 0%;
+    animation: fadein 1s ease-in-out forwards;
+    position: absolute;
+    top: 10em;
   }
   .headtitle span {
     font-size: 10rem;
@@ -328,9 +338,6 @@ body {
   /*header/navbar */
   .headercontainer {
     position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: red;
   }
   .header {
     width: 100%;
