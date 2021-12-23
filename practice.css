@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-color: black;
@@ -124,8 +125,12 @@ body {
   color: #c5c6c7;
   cursor: pointer;
 }
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
 /*landing page content*/
-.landingpage {
+#landingpage {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -162,14 +167,14 @@ body {
 }
 
 /*Recent Activity body*/
-.recentactivitycontainer {
+#recentactivitycontainer {
   padding-top: 20px;
   padding-bottom: 5vh;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
-.recentactivitycontainer h1 {
+#recentactivitycontainer h1 {
   font-size: 1.3em;
   font-family: var(--Tlium);
   text-align: center;
@@ -241,10 +246,6 @@ body {
 }
 
 /*About - footer*/
-.footer {
-  display: flex;
-  flex-direction: column;
-}
 .aboutcontainer {
   margin-top: 1.5em;
   margin-left: 1em;
@@ -274,13 +275,23 @@ body {
 }
 
 @media (min-width: 600px) {
+  @keyframes fadein {
+    from {
+      top: 10em;
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+      top: 15em;
+    }
+  }
   /*makes the phone hamburger button disappear*/
   .navbarhamburger {
-    visibility: hidden;
+    display: none;
   }
 
   /*landing page content for pc*/
-  .landingpage {
+  #landingpage {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,6 +304,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    position: absolute;
+    animation: fadein 1s ease-in-out forwards;
   }
   .headtitle span {
     font-size: 10rem;
@@ -328,9 +341,6 @@ body {
   /*header/navbar */
   .headercontainer {
     position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: red;
   }
   .header {
     width: 100%;
@@ -363,12 +373,12 @@ body {
   }
 
   /*Recent activity body*/
-  .recentactivitycontainer {
+  #recentactivitycontainer {
     flex-direction: row;
     justify-content: space-evenly;
     height: 100vh;
   }
-  .recentactivitycontainer h1 {
+  #recentactivitycontainer h1 {
     position: absolute;
     justify-content: center;
     font-size: 3.5vmin;
@@ -405,10 +415,6 @@ body {
   }
 
   /*Foot - About section*/
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
   .aboutcontainer {
     display: flex;
     flex-direction: column;
