@@ -32,6 +32,18 @@ body {
     right: -300px;
   }
 }
+@keyframes fadein {
+  from {
+    position: relative;
+    top: 15em;
+    opacity: 0%;
+  }
+  to {
+    position: relative;
+    opacity: 100%;
+    top: 18em;
+  }
+}
 /*Animation for show and hide of the side navbar*/
 .showsidenavbar {
   right: 0px;
@@ -134,9 +146,9 @@ body {
 #landingpage {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-top: 150px;
   height: 100vh;
+  margin-left: 1em;
+  animation: fadein 1s ease-in-out forwards;
 }
 .author {
   line-height: 1em;
@@ -278,12 +290,12 @@ body {
 @media (min-width: 600px) {
   @keyframes fadein {
     from {
-      top: 10em;
+      top: 1em;
       opacity: 0%;
     }
     to {
       opacity: 100%;
-      top: 15em;
+      top: 5em;
     }
   }
   /*makes the phone hamburger button disappear*/
@@ -297,16 +309,9 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding-left: 0;
-    padding-top: 0;
-  }
-  .landingpagecontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    position: absolute;
-    animation: fadein 1s ease-in-out forwards;
+    align-items: center;
+    bottom: 0;
+    animation: fadein 0.5s ease-in-out forwards;
   }
   .headtitle span {
     font-size: 10rem;
