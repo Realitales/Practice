@@ -45,6 +45,7 @@ body {
 .headercontainer {
   position: fixed;
   right: 0px;
+  z-index: 1 !important;
 }
 .header {
   width: 80px;
@@ -408,6 +409,8 @@ body {
   }
   .tstackprogress h2 {
     font-size: 2em;
+    text-align: right;
+    margin-right: 0.5em;
   }
   .tstackprogresscontainer {
     width: 40vw;
